@@ -1,0 +1,16 @@
+## .NET build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+TestResults/
+
+## Secrets and local overrides — never commit
+appsettings.Development.json
+appsettings.Local.json
+*.env
+.env*
+secrets.json

@@ -1,0 +1,12 @@
+@host = http://localhost:5080
+
+### Which provider is active?
+GET {{host}}/
+
+### Triage an incident
+POST {{host}}/triage
+Content-Type: application/json
+
+{
+  "text": "Users in the Indy office can't reach the order portal since 9 a.m. VPN connects fine. Other sites are OK. The database team says no changes were made last night."
+}

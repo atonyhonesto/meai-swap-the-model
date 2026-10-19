@@ -1,0 +1,26 @@
+[
+  {
+    "id": "INC-001",
+    "text": "Users in the Indy office can't reach the order portal since 9 a.m. VPN connects fine. Other sites are OK. The database team says no changes were made last night."
+  },
+  {
+    "id": "INC-002",
+    "text": "Nightly EDI 856 batch to the warehouse partner failed with a timeout at 2:14 a.m. Retry at 3:00 a.m. also failed. Partner says their AS2 endpoint is up."
+  },
+  {
+    "id": "INC-003",
+    "text": "Several employees report being prompted for MFA repeatedly after this morning's password policy change. Some are locked out entirely."
+  },
+  {
+    "id": "INC-004",
+    "text": "The reporting dashboard loads but every chart shows yesterday's data. The scheduled refresh job shows 'succeeded' in the scheduler."
+  },
+  {
+    "id": "INC-005",
+    "text": "Customer-facing checkout page returns HTTP 500 for roughly 1 in 10 requests since the 11:30 deployment. Error logs mention a null reference in the tax calculation service."
+  },
+  {
+    "id": "INC-006",
+    "text": "One user says their second monitor stopped working after a Windows update. Everything else on the laptop is fine."
+  }
+]

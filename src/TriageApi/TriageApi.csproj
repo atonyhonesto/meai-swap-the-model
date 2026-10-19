@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TriageApi</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The abstraction layer + middleware (caching, logging, OpenTelemetry) -->
+    <PackageReference Include="Microsoft.Extensions.AI" Version="10.*" />
+
+    <!-- Provider 1: Ollama (local) -->
+    <PackageReference Include="OllamaSharp" Version="5.*" />
+
+    <!-- Provider 2: Azure OpenAI -->
+    <PackageReference Include="Azure.AI.OpenAI" Version="2.*" />
+    <PackageReference Include="Azure.Identity" Version="1.*" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.*" />
+
+    <!-- Provider 3: Amazon Bedrock -->
+    <PackageReference Include="AWSSDK.BedrockRuntime" Version="4.*" />
+    <PackageReference Include="AWSSDK.Extensions.Bedrock.MEAI" Version="4.*" />
+  </ItemGroup>
+
+</Project>
